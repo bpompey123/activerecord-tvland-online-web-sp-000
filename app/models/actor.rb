@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.character
+    self.character.name + self.shows.name
   end
 
 end
